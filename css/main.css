@@ -2017,6 +2017,19 @@ html[dir="ltr"] .search-form .search .search-content .search-btn {
   right: 0px;
 }
 
+html[dir="ltr"] .search-form .search .search-content input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+@media (max-width: 576px) {
+  html[dir="ltr"] .search-form .search .search-content input {
+    border-radius: 12px;
+  }
+}
+
 html[dir="ltr"] header .swiper-container .swiper-button-prev {
   right: unset;
   left: 45px;

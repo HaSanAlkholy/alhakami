@@ -526,8 +526,8 @@ nav {
     .nav-bottom {
         padding: 20px 0;
 
-        @media(max-width:576px){
-            padding:5px;
+        @media (max-width: 576px) {
+            padding: 5px;
         }
 
         .c2 {
@@ -674,7 +674,7 @@ nav {
 
             @media (max-width: 1200px) {
                 justify-content: flex-end;
-                width:30%;
+                width: 30%;
                 .nava-btn,
                 .search-btn {
                     display: block;
@@ -905,8 +905,8 @@ nav {
                         }
                     }
 
-                    .home{
-                        order:-1;
+                    .home {
+                        order: -1;
                     }
 
                     .categories {
@@ -1182,9 +1182,9 @@ nav {
                     }
                 }
 
-                .search-btn{
-                    top:unset;
-                    bottom:0;
+                .search-btn {
+                    top: unset;
+                    bottom: 0;
                 }
             }
         }
@@ -1857,6 +1857,17 @@ html[dir="ltr"] {
                 .search-btn {
                     left: unset;
                     right: 0px;
+                }
+
+                input {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: 12px;
+                    border-bottom-right-radius: 12px;
+
+                    @media(max-width:576px){
+                        border-radius:12px;
+                    }
                 }
             }
         }
