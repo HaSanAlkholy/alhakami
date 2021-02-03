@@ -168,14 +168,14 @@
 }
 
 .s-head {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     h3 {
         margin: 0;
-        font-size: 26px;
+        font-size: 22px;
         color: black;
         font-family: TajawalBold;
     }
@@ -214,8 +214,8 @@
         padding: 0 20px;
 
         h5 {
-            font-size: 17px;
-            font-family: TajawalMedium;
+            font-size: 14px;
+            font-family: "TajawalRegular";
             margin-bottom: 17px;
             line-height: 18px;
 
@@ -228,14 +228,14 @@
 
         .price {
             .now {
-                font-size: 24px;
+                font-size: 18px;
                 font-family: TajawalBold;
                 color: $color2;
             }
 
             .price-sale {
                 text-decoration: line-through;
-                color: #757575;
+                color: #afafaf;
                 font-size: 16px;
                 margin: 0 5px;
                 font-weight: 400;
@@ -287,18 +287,18 @@
             }
         }
 
-        @media(max-width:576px){
+        @media (max-width: 576px) {
             flex-direction: column;
 
-            a{
+            a {
                 margin: 3px 0;
             }
 
-            .cart{
-                width:90%;
+            .cart {
+                width: 90%;
 
-                a{
-                    padding:12px 0;
+                a {
+                    padding: 12px 0;
                 }
             }
         }
@@ -314,9 +314,6 @@
         padding-bottom: 0;
         .product-disc {
             padding: 0 10px;
-            h5 {
-                font-size: 15px;
-            }
             .price {
                 flex-direction: column;
 
@@ -456,11 +453,6 @@ nav {
             visibility: hidden;
             opacity: 0;
             z-index: 9;
-
-            @media (max-width: 1200px) {
-                left: -100%;
-                transform: none;
-            }
         }
 
         .drop-link {
@@ -533,6 +525,10 @@ nav {
 
     .nav-bottom {
         padding: 20px 0;
+
+        @media(max-width:576px){
+            padding:5px;
+        }
 
         .c2 {
             display: flex;
@@ -678,6 +674,7 @@ nav {
 
             @media (max-width: 1200px) {
                 justify-content: flex-end;
+                width:30%;
                 .nava-btn,
                 .search-btn {
                     display: block;
@@ -727,9 +724,9 @@ nav {
 
                     & > a,
                     & > .setting-anchor {
-                        color: rgba(238, 238, 238, 255);
+                        color: #ffffff;
+                        font-size: 16px;
                         transition: all 0.5s;
-                        font-size: 18px;
                         text-transform: capitalize;
                         font-family: TajawalMedium;
 
@@ -771,8 +768,7 @@ nav {
                     }
 
                     & > .top-dropDown {
-                        padding: 30px 40px;
-                        min-width: 285px;
+                        min-width: 220px;
                         text-align: start;
                         right: 0;
                         border-radius: 0;
@@ -787,7 +783,7 @@ nav {
                         .in-menu > .setting-anchor,
                         .in-menu > .top-dropDown > .drop-links > .drop-link {
                             color: rgba(66, 66, 66, 255);
-                            font-size: 17px;
+                            font-size: 16px;
                             font-family: TajawalMedium;
                             margin-bottom: 30px;
 
@@ -823,7 +819,6 @@ nav {
                         min-height: 100%;
                         min-width: max-content;
                         text-align: start;
-                        padding: 30px 40px;
 
                         .drop-links {
                             .drop-link {
@@ -891,6 +886,7 @@ nav {
                     align-items: flex-start;
                     margin: 30px 0;
                     width: 100%;
+
                     li {
                         margin: 10px 0;
 
@@ -907,6 +903,10 @@ nav {
                                 color: $color2;
                             }
                         }
+                    }
+
+                    .home{
+                        order:-1;
                     }
 
                     .categories {
@@ -930,8 +930,8 @@ nav {
 
                         & > .top-dropDown {
                             background-color: unset;
-                            padding:0;
-                            padding-top:20px;
+                            padding: 0;
+                            padding-top: 20px;
                             padding-inline-start: 15px;
                             margin: 0;
                             min-width: unset;
@@ -957,6 +957,7 @@ nav {
                         }
                     }
                 }
+
                 .nava-head {
                     width: 100%;
                     display: flex;
@@ -996,6 +997,7 @@ nav {
                         .top-dropDown {
                             left: unset;
                             right: 0;
+                            transform: none;
                         }
                     }
 
@@ -1164,12 +1166,12 @@ nav {
 
             @media (max-width: 576px) {
                 form {
-                    flex-direction: column-reverse;
+                    flex-direction: column;
                 }
 
                 input {
                     border-radius: 12px;
-                    margin-bottom: 15px;
+                    margin-top: 15px;
                 }
 
                 .bootstrap-select {
@@ -1178,6 +1180,11 @@ nav {
                     .dropdown-toggle {
                         border-radius: 12px;
                     }
+                }
+
+                .search-btn{
+                    top:unset;
+                    bottom:0;
                 }
             }
         }
@@ -1279,8 +1286,8 @@ header {
             text-align: center;
             background-color: #f5f5f5;
             color: $color1;
-            font-size: 17px;
-            font-family: TajawalBold;
+            font-size: 14px;
+            font-family: "TajawalRegular";
             border-radius: 12px;
             transition: all 0.5s;
         }
@@ -1749,7 +1756,7 @@ html[dir="ltr"] {
                 left: -75px;
                 right: unset;
             }
-    
+
             .swiper-button-next {
                 right: -75px;
                 left: unset;
@@ -1758,15 +1765,6 @@ html[dir="ltr"] {
     }
 
     nav {
-        .top-setting {
-            .top-dropDown {
-                @media (max-width: 1200px) {
-                    left: unset;
-                    right: -100%;
-                }
-            }
-        }
-
         .nava {
             .nava-content {
                 @media (max-width: 1200px) {

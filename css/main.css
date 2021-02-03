@@ -356,7 +356,7 @@ ul {
 }
 
 .s-head {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -364,7 +364,7 @@ ul {
 
 .s-head h3 {
   margin: 0;
-  font-size: 26px;
+  font-size: 22px;
   color: black;
   font-family: TajawalBold;
 }
@@ -404,8 +404,8 @@ ul {
 }
 
 .product .product-disc h5 {
-  font-size: 17px;
-  font-family: TajawalMedium;
+  font-size: 14px;
+  font-family: "TajawalRegular";
   margin-bottom: 17px;
   line-height: 18px;
 }
@@ -415,14 +415,14 @@ ul {
 }
 
 .product .product-disc .price .now {
-  font-size: 24px;
+  font-size: 18px;
   font-family: TajawalBold;
   color: #0c753b;
 }
 
 .product .product-disc .price .price-sale {
   text-decoration: line-through;
-  color: #757575;
+  color: #afafaf;
   font-size: 16px;
   margin: 0 5px;
   font-weight: 400;
@@ -496,9 +496,6 @@ ul {
   }
   .product .product-disc {
     padding: 0 10px;
-  }
-  .product .product-disc h5 {
-    font-size: 15px;
   }
   .product .product-disc .price {
     flex-direction: column;
@@ -642,13 +639,6 @@ nav .top-setting .top-dropDown {
   z-index: 9;
 }
 
-@media (max-width: 1200px) {
-  nav .top-setting .top-dropDown {
-    left: -100%;
-    transform: none;
-  }
-}
-
 nav .top-setting .drop-link {
   color: #757575;
   white-space: nowrap;
@@ -719,6 +709,12 @@ nav .nav-top .nav-lang .down {
 
 nav .nav-bottom {
   padding: 20px 0;
+}
+
+@media (max-width: 576px) {
+  nav .nav-bottom {
+    padding: 5px;
+  }
 }
 
 nav .nav-bottom .c2 {
@@ -869,6 +865,7 @@ nav .nav-bottom .nav-icons .cart-btn {
 @media (max-width: 1200px) {
   nav .nav-bottom .nav-icons {
     justify-content: flex-end;
+    width: 30%;
   }
   nav .nav-bottom .nav-icons .nava-btn,
   nav .nav-bottom .nav-icons .search-btn {
@@ -925,9 +922,9 @@ nav .nava .nava-content > ul > li {
 
 nav .nava .nava-content > ul > li > a,
 nav .nava .nava-content > ul > li > .setting-anchor {
-  color: #eeeeee;
+  color: #ffffff;
+  font-size: 16px;
   transition: all 0.5s;
-  font-size: 18px;
   text-transform: capitalize;
   font-family: TajawalMedium;
 }
@@ -972,8 +969,7 @@ nav .nava .nava-content > ul .categories > .setting-anchor:hover {
 }
 
 nav .nava .nava-content > ul .categories > .top-dropDown {
-  padding: 30px 40px;
-  min-width: 285px;
+  min-width: 220px;
   text-align: start;
   right: 0;
   border-radius: 0;
@@ -989,7 +985,7 @@ nav .nava .nava-content > ul .categories > .top-dropDown > a,
 nav .nava .nava-content > ul .categories > .top-dropDown .in-menu > .setting-anchor,
 nav .nava .nava-content > ul .categories > .top-dropDown .in-menu > .top-dropDown > .drop-links > .drop-link {
   color: #424242;
-  font-size: 17px;
+  font-size: 16px;
   font-family: TajawalMedium;
   margin-bottom: 30px;
 }
@@ -1031,7 +1027,6 @@ nav .nava .nava-content > ul .in-menu .top-dropDown {
   min-height: 100%;
   min-width: max-content;
   text-align: start;
-  padding: 30px 40px;
 }
 
 nav .nava .nava-content > ul .in-menu .top-dropDown .drop-links .drop-link {
@@ -1119,6 +1114,9 @@ nav .nava .nava-content .nava-head {
   nav .nava .nava-content > ul li .setting-anchor:hover {
     color: #0c753b;
   }
+  nav .nava .nava-content > ul .home {
+    order: -1;
+  }
   nav .nava .nava-content > ul .categories {
     margin-inline-end: 0;
   }
@@ -1188,6 +1186,7 @@ nav .nava .nava-content .nava-head {
   nav .nava .nava-content .nava-head .nava-lang .top-dropDown {
     left: unset;
     right: 0;
+    transform: none;
   }
   nav .nava .nava-content .nava-head .nava-close {
     position: absolute;
@@ -1355,17 +1354,21 @@ nav .nava-active .nava-content {
 
 @media (max-width: 576px) {
   .search-form .search .search-content form {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .search-form .search .search-content input {
     border-radius: 12px;
-    margin-bottom: 15px;
+    margin-top: 15px;
   }
   .search-form .search .search-content .bootstrap-select {
     width: 100% !important;
   }
   .search-form .search .search-content .bootstrap-select .dropdown-toggle {
     border-radius: 12px;
+  }
+  .search-form .search .search-content .search-btn {
+    top: unset;
+    bottom: 0;
   }
 }
 
@@ -1468,8 +1471,8 @@ header .swiper-container .swiper-slide img {
   text-align: center;
   background-color: #f5f5f5;
   color: #b87508;
-  font-size: 17px;
-  font-family: TajawalBold;
+  font-size: 14px;
+  font-family: "TajawalRegular";
   border-radius: 12px;
   transition: all 0.5s;
 }
@@ -1949,13 +1952,6 @@ html[dir="ltr"] .brands .brands-swiper-container .swiper-button-prev {
 html[dir="ltr"] .brands .brands-swiper-container .swiper-button-next {
   right: -75px;
   left: unset;
-}
-
-@media (max-width: 1200px) {
-  html[dir="ltr"] nav .top-setting .top-dropDown {
-    left: unset;
-    right: -100%;
-  }
 }
 
 @media (max-width: 1200px) {
